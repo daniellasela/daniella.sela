@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+    <h2>HTML Forms</h2>
+
+<form id="register_form" action="/" style="border: 1px solid gray; width: fit-content; padding: 5px">
+    <h3>Register</h3>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" placeholder="First Name"><br><br>
+
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" placeholder="Last Name"><br><br>
+
+  <label for="email">Email:</label><br>
+  <input type="text" id="email" name="email" placeholder="enail@gmail.com"><br><br>
+
+  <label for="phone">Phone:</label><br>
+  <input type="text" id="phone" name="phone" placeholder="0508888888"><br><br>
+<label for="gender">Gender:</label><br>
+  <div id="gender">
+      <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label><br>
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">Other</label>
+  </div>
+<br>
+  <input type="submit" value="Submit">
+</form>
+<br><br>
+<form id="contectAs_form" action="/" style="border: 1px solid gray; width: fit-content; padding: 5px">
+    <h3>Contact As</h3>
+
+
+  <input type="text" id="first_name" name="first_name" placeholder="First Name"><br><br>
+
+  <input type="text" id="last_name" name="last_name" placeholder="Last Name"><br><br>
+
+  <input type="text" id="email2" name="email" placeholder="email@gmail.com"><br><br>
+
+  <textarea name="comment" form="contectAs_form">Enter text here...</textarea>
+
+<br>
+  <input type="submit" value="Submit">
+</form>
+
+
+</body>
+</html>
