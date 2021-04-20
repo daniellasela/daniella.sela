@@ -1,0 +1,32 @@
+body{ background-color: darkgrey;
+    padding: 50px;
+    border: wheat solid;
+
+}
+.grid-container {
+    display: grid;
+    grid-template-areas: "header header header header header header header header "
+"headlines headlines main main main main main main "
+"headlines headlines main main main main main main "
+"headlines headlines main main main main main main "
+"headlines headlines main main main main main main "
+"headlines headlines main main main main main main "
+"headlines headlines main main main main main main "
+"headlines headlines main main main main main main ";
+    grid-auto-rows: 800px 800px;
+}
+.itam1 {
+    grid-area:header;
+    grid-column-start: 1;
+    grid-column-end: 8;
+}
+.item2 {
+    grid-area:headlines;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.item3 {
+    grid-area:main;
+    grid-column-start: 2;
+    grid-column-end: 8;
+}
