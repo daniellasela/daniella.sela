@@ -2,13 +2,100 @@
 <html lang="en">
   <head>
     <title>GRID DEMO FOR MT CV WEB</title>
-      <link rel="stylesheet" href="cv.css">
+    <link rel="stylesheet" href="cv.css" />
   </head>
   <body>
-  <div class="grid-container">
-      <div class="item1">itam1</div>
-<div class="item2">itam2</div>
-      <div class="item3">itam3</div>
+
+    <div id="fader">
+    </div>
+   <div class="body">
+    <div class="grid-container">
+      <div class="item1">
+        <header class="cv_header">
+          <div id="img_div">
+            <img src="./ME.jfif" alt="My Photo" width="160px" height="190px" />
+          </div>
+          <div class="me_div">
+            <h2>Welcome To</h2>
+            <h1>Daniella Sela CV</h1>
+            <div style="display: flex;">
+              <div class="email">Email: daniellasela@gmail.com</div><div class="downloadCv"><a href="Daniella Sela CV.docx" download>Download My CV</a></div>
+            </div>
+            <div class="social_media_div">
+              <ul>
+                <li><a href="https://github.com/daniellasela">GitHub</a></li>
+                <li>
+                  <a href="https://www.linkedin.com/in/daniella-sela-a03932198/"
+                    >LinkedIn</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/daniella.sela">Facebook</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </header>
+      </div>
+      <div class="item2">
+        <div class="navbar">
+          <div class="navbar_item">
+            <a id="about_div" href="#about">About</a>
+          </div>
+          <div class="navbar_item">
+            <a id="education_div" href="#education">Education</a>
+          </div>
+          <div class="navbar_item">
+            <a id="works_div" href="#works">Works</a>
+          </div>
+          <div class="navbar_item">
+            <a id="army_div" href="#army">Army</a>
+          </div>
+          <div class="navbar_item">
+            <a  id="contact_div" href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+      <div class="item3">
+        <div class="main_div">
+          <div id="about">
+            <h3>About</h3>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+          </div>
+          <div id="education">
+            <h3>Education</h3>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+          </div>
+          <div id="works">
+            <h3>Works</h3>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+          </div>
+          <div id="army">
+            <h3>Army</h3>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+          </div>
+          <div id="contact">
+            <h3>Contact Me</h3>
+
+              <form action="/action_page.php">
+                
+                <label for="fname">Full Name</label>
+                <input type="text" id="fname" name="fullname" placeholder="Your full name..">
+                
+                <label for="company">Company</label>
+                <input type="text" id="company" name="company" placeholder="company ..">
+            
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            
+                <input type="submit" value="Submit" >
+              </form>
+            
+            
+          </div>
+        </div>
+    </div>
   </div>
   </body>
-
+  <script type="text/javascript" src="cv.js"></script>
+</html>
