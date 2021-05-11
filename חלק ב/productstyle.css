@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #EDE9E2;
+    font-family: font1;
+
+}
+.row{
+    width: 70%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.col{
+    flex-basis: 50%;
+}
+.slider{
+    height: 80vh;
+    display: flex;
+}
+.product img{
+    height: 0px;
+    margin-bottom: 19px;
+    cursor: pointer;
+    opacity: 0.6;
+}
+.preview img{
+    height: 80%;
+}
+p{
+    margin-bottom: 60px;
+}
+
+@font-face {
+font-family: font1;
+src: url(AmaticSC-Bold.ttf);
+}
+
+h2{
+    font-size: 60px;
+    color: #9c7c81;
+    margin-bottom: 20px;
+}
+.Description{
+    color: #48422a;
+    font-size: 35px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+input{
+    width: 45px;
+    border: 1px solid #9c7c81;
+    font-weight: bold;
+    text-align: center;
+}
+button{
+    background: #9c7c81;
+    padding: 10px 15px;
+}
+
+
+
+
+
+
+
+
+
+

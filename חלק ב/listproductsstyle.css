@@ -1,0 +1,91 @@
+
+body {
+  line-height: 1;
+}
+
+@font-face {
+font-family: font1;
+src: url(AmaticSC-Bold.ttf);
+}
+
+body {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1240px;
+  font-family: font1;
+  background-color: #EDE9E2;
+}
+
+h1 {
+  font-size: 45px;
+  font-weight: 300;
+  flex: 1;
+}
+
+h4 {
+  font-weight: 500;
+  line-height: 1.7em;
+}
+
+h5 {
+  color: #666;
+  font-size: 20px;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+
+  padding: 2%;
+  flex: 1 16%;
+
+  background-color: #dacec2;
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.25);
+}
+
+.product-image {
+  position: relative;
+}
+
+.product-image img {
+  width: 100%;
+}
+.icons {
+  opacity: 0;
+  width: 40%;
+  margin: auto;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.protuct-hover {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  padding: 50% 0;
+  transition: 0.3s;
+}
+
+.protuct-hover:hover {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  opacity: 0.6;
+}
+
+.protuct-hover:hover .icons {
+  opacity: 0.9;
+}
+
+.product-info {
+  font-size: 30px;
+  margin-top: auto;
+  padding-top: 20px;
+  text-align: center;
+}
