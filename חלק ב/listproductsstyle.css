@@ -8,7 +8,8 @@ font-family: font1;
 src: url(AmaticSC-Bold.ttf);
 }
 
-body {
+.body1 {
+  padding-bottom: 100px;
   margin: 0 auto;
   width: 90%;
   max-width: 1240px;
@@ -16,7 +17,9 @@ body {
   background-color: #EDE9E2;
 }
 
+
 h1 {
+padding-top: 50px;
   font-size: 45px;
   font-weight: 300;
   flex: 1;

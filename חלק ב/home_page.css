@@ -1,0 +1,232 @@
+* {
+    box-sizing: border-box;
+    background-color: #EDE9E2;
+    font-family: font1;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.ourBread img {
+    width: 100%;
+    height: auto;
+}
+
+.ourBread .btn {
+    position: absolute;
+    top: 70%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    border-color: #9c7c81;
+    border: solid;
+    border-width: 1px;
+    font-size: 50px;
+    color: #9c7c81;
+    padding: 24px 48px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.ourBread .btn:hover {
+    background-color: #9c7c81;
+    color: #dacec2;
+}
+
+.col-4 {
+    text-align: center;
+}
+
+
+.catImg {
+    width: 60%;
+}
+
+.col-4 .catBTN {
+    width: 60%;
+    font-size: 30px;
+    color: #48422a;
+    background-color: #E2DAD5;
+    border: none;
+    cursor: pointer;
+}
+
+.col-4 .catBTN:hover {
+    background-color: #9c7c81;
+    color: #dacec2;
+}
+
+.col-3 {
+    text-align: center;
+}
+
+.col-3 img {
+    width: 60%;
+}
+
+.col-3:hover img {
+    opacity: 0.3;
+}
+
+.title1 {
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 50px;
+    font-size: 50px;
+}
+
+.bestSellers {
+    background-color: #E2DAD5;
+}
+
+.BS1 {
+    padding-bottom: 200px;
+}
+
+/*
+
+.header img{
+    width:40%;
+    text-align: center;
+}
+
+#headShop {
+    background-color: #E2DAD5;
+}
+
+#headCont {
+    background-color: #E2DAD5;
+    padding-top: 0px;
+}
+
+#headImg {
+    background-color: #E2DAD5;
+    padding-bottom: 0px;
+}
+
+#login{
+    border: none;
+    padding-right: 30px;
+}
+
+#login:hover{
+    border: none;
+    font-size:40px;
+    padding-right:4px;
+
+    }
+
+.col-2-head {
+    padding:0px;
+    width: 25%;
+    background-color: #E2DAD5;
+
+}
+
+.header {
+    text-align: center;
+    background-color: #E2DAD5;
+}
+
+.rowHeader{
+    text-align: center;
+    background-color: #E2DAD5;
+    color: gray;
+}
+
+.rowHeader::after {
+content: "";
+clear: both;
+display: table;
+}
+
+.headerBTN {
+    padding:6px;
+    font-size:30px;
+    color: gray;
+    background:none;
+    border-color: #ACACAC;
+    border-width: 1px;
+    border-style: solid none solid none;
+    cursor: pointer;
+ }
+
+ .headerBTN:hover {
+    padding:0px;
+    font-size:40px;
+    border-style: none;
+    cursor: pointer;
+
+ }
+
+.fas{
+    background-color: #E2DAD5;
+    font-size:45px;
+}
+
+*/
+
+@font-face {
+    font-family: font1;
+    src: url(AmaticSC-Bold.ttf);
+}
+
+

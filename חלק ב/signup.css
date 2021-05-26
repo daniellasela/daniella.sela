@@ -1,0 +1,134 @@
+/* CSS HEX*/
+:root {
+    --timberwolf: #e2dad5ff;
+    --alabaster: #ede9e2ff;
+    --bone: #e6e0d2ff;
+    --alabaster-2: #e5e1d8ff;
+}
+
+@font-face {
+    font-family: font1;
+    src: url(Amatic_SC);
+}
+
+
+* {
+    box-sizing: border-box;
+    background-color: #EDE9E2;
+    font-family: font1;
+}
+
+[class*="col-"] {
+    text-align: center;
+    padding: 15px;
+}
+
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+
+.title1 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    font-size: 50px;
+}
+
+.labels{
+    font-size: 30px;
+}
+
+/* Bordered form */
+form {
+    border: 3px solid #f1f1f1;
+    direction: rtl;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 40%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    border: 1px solid #ccc;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+
+.button1 {
+    width: 40%;
+    font-size: 30px;
+    color: #48422a;
+    background-color: #9c7c81;
+    border: none;
+    cursor: pointer;
+}
+
+.button1:hover {
+    background-color: #E2DAD5;
+    color: #48422a;
+}
+
+.resbar {
+    width: 80%;
+    opacity: 0.5;
+}

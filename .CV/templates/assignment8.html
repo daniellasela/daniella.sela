@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}
+    {% endblock %} assignment8</title>
+</head>
+<body>
+<h1> my Hobbies: {{ Hobbies }}</h1>
+<h2>{{ age|round }}</h2>
+{#{% from 'headerForAssignment8.html' import header %}#}
+{% include 'headerForAssignment8.html' %}
+
+     {% if user %}
+
+         <h3> User Name: </h3>
+         <h4 class="{% if user.gender == 'boy' %} boys {% else %} girls {% endif %}">
+             {{ user.firstname }} {{ user.lastname }}</h4>
+
+
+         {%  block cart %}
+         <h3> Favorite_singers: </h3>
+         <ol>
+                {% for singers in Favorite_singers %}
+                    <li>{{ singers }} </li>
+                {% endfor %}
+         </ol>
+
+</body>
+</html>
+
+

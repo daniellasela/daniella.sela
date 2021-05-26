@@ -1,0 +1,182 @@
+/* CSS HEX*/
+:root {
+  --timberwolf: #e2dad5ff;
+  --alabaster: #ede9e2ff;
+  --bone: #e6e0d2ff;
+  --alabaster-2: #e5e1d8ff;
+}
+
+@font-face {
+  font-family: font1;
+  src: url(AmaticSC-Bold.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  background-color: #EDE9E2;
+  font-family: font1;
+  font-size: 45px;
+}
+
+[class*="col-"] {
+  text-align: center;
+  padding: 15px;
+}
+
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.title1 {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  font-size: 60px;
+}
+
+.labels {
+  font-size: 30px;
+}
+
+.button1 {
+  width: 20%;
+  font-size: 40px;
+  color: #48422a;
+  background-color: #9c7c81;
+  border: none;
+  cursor: pointer;
+}
+
+.button1:hover {
+  background-color: #E2DAD5;
+  color: #48422a;
+}
+
+
+.product-header {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 1px solid blue;
+  margin: 0 auto;
+}
+
+.product-title {
+  width: 45%;
+}
+
+.price {
+  width: 15%;
+  display: flex;
+  align-items: center;
+}
+
+.quantity {
+  width: 30%;
+  display: flex;
+  align-items: center;
+}
+
+.total {
+  width: 10%;
+  display: flex;
+  align-items: center;
+}
+
+.product {
+  width: 45%;
+  display: inline-block;
+  justify-content: space-around;
+  padding: 10px 0;
+  padding-top: 13px;
+}
+
+.products {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.products img {
+  width: 50px;
+}
+
+.basketTotalContainer {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.basketTotalTitle {
+  width: 30%;
+}
+
+.basketTotal {
+  width: 10%;
+}
+.qty-value {
+    max-width: 35pt;
+}
+.cart-table img {
+    max-width: 100px;
+}
+
+.button2 {
+  font-size: 15px;
+  height: 100%x;
+
+}

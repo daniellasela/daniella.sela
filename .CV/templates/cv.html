@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>GRID DEMO FOR MT CV WEB</title>
+    <link rel="stylesheet" href= {{ url_for("static",filename="cv.css") }}>
+    <button onclick="location.href='ex7.html'" type="button">
+                        <h3>Contact List</h3>
+                    </button>
+  </head>
+  <body>
+
+    <div id="fader">
+    </div>
+   <div class="body">
+    <div class="grid-container">
+      <div class="item1">
+        <header class="cv_header">
+          <div id="img_div">
+            <img href= {{ url_for("static",filename="ME.jfif",alt="My Photo" ,width="160px" ,height="190px")}}/>
+          </div>
+          <div class="me_div">
+            <h2>Welcome To</h2>
+            <h1>Daniella Sela CV</h1>
+            <div style="display: flex;">
+              <div class="email">Email: daniellasela@gmail.com</div><div class="downloadCv"><a href= {{ url_for("static",filename="Daniella%20Sela%20CV.docx") }} download>Download My CV</a></div>
+            </div>
+            <div class="social_media_div">
+              <ul>
+                <li><a  {{ url_for("https://github.com/daniellasela") }}>GitHub</a></li>
+                <li>
+                  <a {{ url_for("https://www.linkedin.com/in/daniella-sela-a03932198/") }}>LinkedIn</a></li>
+                <li>
+                  <a {{ url_for("https://www.facebook.com/daniella.sela") }}>Facebook</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </header>
+      </div>
+      <div class="item2">
+        <div class="navbar">
+          <div class="navbar_item">
+            <a id="about_div" href="#about">About</a>
+          </div>
+          <div class="navbar_item">
+            <a id="education_div" href="#education">Education</a>
+          </div>
+          <div class="navbar_item">
+            <a id="works_div" href="#works">Works</a>
+          </div>
+          <div class="navbar_item">
+            <a id="army_div" href="#army">Army</a>
+          </div>
+          <div class="navbar_item">
+            <a  id="contact_div" href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+      <div class="item3">
+        <div class="main_div">
+          <div id="about">
+            <h3>About</h3>
+            <dd>
+              <dl>-	Third -year Industrial engineering management student.</dl>
+              <dl> - Exceptional managing abilities, fast learning, and excellent personal skills.</dl>
+              <dl>- Excellent teamwork, tasks prioritizing in short-time schedules in a high-pressure environment. </dl>
+              <dl>- Computer Skills: Full office course, Ben Gurion University. </dl>
+               <dl>- Languages: Native speaker of Hebrew; Advanced English. </dl>
+              <dl> - Interests:  Music, Traveling,  Hearing  podcast while driving.</dl>
+            </dd>
+          </div>
+          <div id="education">
+            <h3>Education</h3>
+            <h4>"BEN- GURION" UNIVERSITY OF THE NEGEV   (2018- present) </h4>
+            <h5>BSc Industrial engineering and management</h5>
+            <dd>
+              <dl>- Exceptional grades at: Java:97, Object-Oriented Programming and  Python:99, Production Planning and Control 1:91, SQL:85. </dl>
+              <dl>- Grade point average:82 </dl>
+                </dd>
+               <h4>"HADARIM" HIGH SCHOOL   (Class of 2012) </h4>
+            <h5>Matriculation Diploma </h5>
+          <dd>
+            <dl>- Major Areas of Study: English, Psychology and Sociology, Arabic, Chemistry. </dl>
+            </dd>
+
+          </div>
+          <div id="works">
+            <h3>Works</h3>
+            <h4>"Math-Tech" summer (funded by the "Trump Family Foundation" and the "Technion")   (Summer 2020)</h4>
+            <h5>Instructions</h5>
+            <dd>
+            <dl>- Instructed up coming high schoolers in an excellence math program.  </dl>
+            <dl>- Provide tools and insight in the developing high tech world, and teach critical thinking while using the advanced knowledge of the high tech world.</dl>
+            </dd>
+<h4>El Al Israel Airlines Ltd    (2017-2018) </h4>
+            <h5>Stewardess </h5>
+            <dd>
+              <dl>- Expert service provider for high-level clients (advanced class and high-ranking flight attendant for the business department)  </dl>
+            <dl>- Working in a high presser environment - Teamwork, maintaining a kind, and patience services for long and late hours. </dl>
+            </dd>
+
+
+          </div>
+          <div id="army">
+            <h3>Army</h3>
+            <h4>ISRAELI DEFENSE FORCES    </h4>
+            <h5>Education and event officer of the Computer Service Directorate   (2014-2016)</h5>
+     <dd>
+              <dl>- Graduate Officers Training School (BAHAD 1) </dl>
+       <dl>- Managing and directing 16 soldiers in my department both on routine, and in a challenging environment (“Tzuk Eitan” operation in 2014) </dl>
+       <dl>- Work with  high rank officers </dl>
+       <dl>- Ability to multitask and work under pressure </dl>
+       <dl>- Manager of the units budget </dl>
+            </dd>
+            <h5>Education and event soldier of "maytar" regiment in artillery corps   ( 2013-2014 )</h5>
+ <dd>
+              <dl>- Basic IDF educational training cores.</dl>
+   <dl>- Responsible for planning and executing annual educational programs in accordance with the operational needs.</dl>
+            </dd>
+
+          </div>
+          <div id="contact">
+            <h3>Contact Me</h3>
+              <form action="/action_page.php">
+                
+                <label for="fname">Full Name</label>
+                <input type="text" id="fname" name="fullname" placeholder="Your full name..">
+                
+                <label for="company">Company</label>
+                <input type="text" id="company" name="company" placeholder="company ..">
+            
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            
+                <input type="submit" value="Submit" >
+              </form>
+          </div>
+        </div>
+    </div>
+  </div>
+         </div>
+  </body>
+   <script type="text/javascript" {{ url_for('static', filename='cv.js')}}></script>
+</html>
