@@ -9,9 +9,6 @@ fetch('https://reqres.in/api/users?page=2').then(
 
 function createUsersList(users){
     console.log(users);
-  console.log(userToSearch,'daniella');
-    const user = users[0];
-    console.log(user);
     const curr_main = document.querySelector("main");
     for(let user of users){
 
