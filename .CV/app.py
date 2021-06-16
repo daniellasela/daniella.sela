@@ -1,6 +1,11 @@
-from flask import Flask, render_template, url_for, request, session, redirect
-app = Flask(__name__)
+from flask import Flask, render_template, url_for, request, session, redirect,Blueprint
 import requests
+import mysql.connector
+import tkinter
+from tkinter import messagebox
+
+app = Flask(__name__)
+app.secret_key='123'
 
 @app.route('/')
 def main_cv():
@@ -50,3 +55,37 @@ def Assignment_9():
             NICKNAME = ''
         return render_template('assignment9.html', session='TRUE', username=NICKNAME)
     return render_template('assignment9.html')
+
+from pages.assignment10.assignment10 import Assignment10
+app.register_blueprint(Assignment10)
+
+def interact_db(query, query_type: str):
+    return_value = False
+    connection = mysql.connector.connect(host='localhost',
+                                         user='root',
+                                         passwd='root',
+                                         database='assignment10')
+    cursor = connection.cursor(named_tuple=True)
+    cursor.execute(query)
+
+    if query_type == 'commit':
+        # Use for INSERT UPDATE, DELETE statements.
+        # Returns: The number of rows affected by the query (a non-negative int.)
+        connection.commit()
+        return_value = True
+
+    if query_type == 'fetch':
+        # Use for SELECT statement.
+        # Returns: False if the query failed, or the result of the query if it is success.
+        query_result = cursor.fetchall()
+        return_value = query_result
+
+    if return_value == True:
+        root = tkinter.Tk()
+        root.withdraw()
+        # Message Box
+        messagebox.showinfo("DataBase Has Been Updated", "The execute was successful")
+
+    connection.close()
+    cursor.close()
+    return return_value
